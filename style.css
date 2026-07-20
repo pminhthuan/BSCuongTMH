@@ -3218,3 +3218,12 @@ blockquote::before {
     object-fit: contain;
 
 }
+
+@media (max-width:768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+}
