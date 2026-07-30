@@ -3466,10 +3466,18 @@ blockquote::before {
     .equipment-content h2 {
         font-size: 30px;
     }
+
+    #header nav {
+        display: none !important;
+    }
 }
 
 /* Điện thoại */
 @media (max-width: 576px) {
+
+    #header nav {
+        display: none !important;
+    }
 
     .container {
         width: 92%;
