@@ -3372,3 +3372,219 @@ blockquote::before {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* ===== MOBILE FIX - thêm ở CUỐI file ===== */
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    /* Header luôn nền trắng trên mobile */
+    #header {
+        background: #fff;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+    }
+
+    .logo-text h2 {
+        color: #222 !important;
+    }
+
+    .logo-text span {
+        color: #666 !important;
+    }
+
+    .header-phone {
+        display: none;
+    }
+
+    #mobileMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 32px 0 24px;
+    }
+
+    .hero-wrapper {
+        flex-direction: column-reverse;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right {
+        max-width: 360px;
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin: 16px auto 0;
+        max-width: 32ch;
+    }
+
+    .hero-buttons {
+        margin-top: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Các section 2 cột */
+    .about-wrapper,
+    .doctor-wrapper,
+    .equipment-wrapper,
+    .map-wrapper {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    /* Card */
+    .service-grid,
+    .service-detail,
+    .review-wrapper,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 64px 0;
+    }
+
+    .section-title h2,
+    .about-content h2,
+    .doctor-content h2,
+    .equipment-content h2 {
+        font-size: 30px;
+    }
+}
+
+/* Điện thoại */
+@media (max-width: 576px) {
+
+    .container {
+        width: 92%;
+    }
+
+    #header .container {
+        height: 72px;
+    }
+
+    .top-banner {
+        margin-top: 72px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 44px;
+    }
+
+    .logo-text h2 {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .logo-text span {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 24px 0 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .section {
+        padding: 56px 0;
+    }
+
+    .section-title {
+        margin-bottom: 36px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .about-content h2,
+    .doctor-content h2,
+    .equipment-content h2 {
+        font-size: 26px;
+    }
+
+    .accordion-header {
+        padding: 16px 18px;
+    }
+
+    .accordion-header h4 {
+        font-size: 16px;
+    }
+
+    .accordion-body {
+        padding: 0 18px 18px;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+        padding: 18px 18px 10px;
+    }
+
+    .service-card ul {
+        padding: 0 18px 20px;
+    }
+
+    .service-column,
+    .review-card,
+    .contact-box {
+        padding: 22px;
+    }
+
+    .map-box iframe {
+        min-height: 320px;
+    }
+
+    .floating-contact {
+        right: 14px;
+        bottom: 14px;
+        gap: 10px;
+    }
+
+    .float-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .float-btn img {
+        width: 28px;
+    }
+}
