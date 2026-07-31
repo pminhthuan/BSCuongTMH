@@ -3596,3 +3596,198 @@ blockquote::before {
         width: 28px;
     }
 }
+
+/* Mobile-only fixes: giảm khả năng horizontal overflow, không ảnh hưởng desktop */
+@media (max-width: 900px) {
+
+    /* Ngang an toàn */
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        /* phòng hờ trên mobile */
+    }
+
+    /* Container co lại trên mobile */
+    .container {
+        width: 95%;
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+
+    /* Nếu các layout dùng grid có cột cố định, stack thành 1 cột trên mobile */
+    .about-wrapper,
+    .doctor-wrapper,
+    .equipment-wrapper,
+    .service-grid,
+    .service-card,
+    /* đảm bảo các card co lại */
+    .doctor-info-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* Header / right area: tránh element cố định giữ width lớn */
+    .header-right {
+        min-width: 0;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .header-phone {
+        padding: 8px 12px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* Ẩn nav desktop, hiển thị nút mobile menu (nếu có) */
+    nav {
+        display: none !important;
+    }
+
+    #mobileMenu {
+        display: inline-flex !important;
+    }
+
+    /* Ảnh / media: không vượt khung */
+    img,
+    .hero-right img,
+    .service-card img,
+    .equipment-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    /* Off-canvas mobile nav (dùng transform để ẩn, tránh tạo overflow) */
+    #mobileNav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 84vw;
+        max-width: 360px;
+        transform: translateX(100%);
+        /* ẩn ngoài màn hình */
+        transition: transform .35s ease;
+        z-index: 99999;
+        background: #fff;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Khi JS thêm .active thì slide vào */
+    #mobileNav.active {
+        transform: translateX(0);
+    }
+
+    /* Phòng hờ: tránh overflow do margin/padding lớn */
+    section {
+        overflow-x: hidden;
+    }
+
+    /* Nếu có các phần tử cụ thể vẫn gây tràn, bạn có thể ép thuộc tính này (dùng tạm) */
+    .force-no-overflow {
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Tránh min-height cố định / overflow hidden trên mobile */
+    .hero {
+        height: auto;
+        /* cho phép nội dung mở rộng tự nhiên */
+        min-height: calc(100vh - 88px);
+        /* thay min-height cứng bằng công thức trừ header */
+        padding: 60px 0;
+        /* thêm khoảng để nút không chạm đáy */
+        overflow: visible;
+        /* nếu nút nằm hơi ngoài, không bị cắt */
+    }
+
+    /* Đảm bảo wrapper và nút nổi trên các section phía dưới */
+    .hero-wrapper {
+        position: relative;
+        z-index: 3;
+    }
+
+    .hero-left,
+    .hero-buttons,
+    .hero-left .btn {
+        position: relative;
+        z-index: 4;
+    }
+
+    /* Nếu section phía dưới có margin-top âm, thêm khoảng cách đảm bảo */
+    .about-section,
+    .section {
+        position: relative;
+        z-index: 1;
+        margin-top: 12px;
+        /* tăng khoảng cách nếu cần, điều chỉnh giá trị nếu cần */
+    }
+
+    /* Nếu bạn dùng ảnh hero-right có kích thước quá lớn, giảm kích thước trên mobile */
+    .hero-right img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
+
+/* --- SAFE mobile fix: dùng scroll-margin / tránh inner-scroll --- */
+@media (max-width: 767px) {
+    :root {
+        --header-offset: 92px;
+    }
+
+    /* Trình duyệt hiện đại: đặt offset khi cuộn tới anchor */
+    html {
+        scroll-padding-top: var(--header-offset);
+    }
+
+    /* Đảm bảo khi dùng anchor, phần tử không bị header che, nhưng KHÔNG thay đổi layout bằng padding/margin */
+    section[id] {
+        scroll-margin-top: var(--header-offset);
+    }
+
+    /* NGĂN inner scroll cho các block chính */
+    .container,
+    .section,
+    .section>.container,
+    .about-wrapper,
+    .doctor-wrapper,
+    .service-grid,
+    .service-card,
+    .review-wrapper,
+    .map-wrapper,
+    .hero-wrapper {
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+        -webkit-overflow-scrolling: auto !important;
+        touch-action: pan-y !important;
+    }
+
+    /* Ẩn scrollbars nếu trình duyệt vẫn show */
+    .service-card {
+        overflow: visible !important;
+    }
+
+    /* Iframe/maps ảnh hưởng tới chiều cao: đảm bảo không ép chiều cao gây overflow */
+    iframe,
+    .map-box,
+    .top-banner img {
+        max-width: 100%;
+        height: auto !important;
+    }
+}
