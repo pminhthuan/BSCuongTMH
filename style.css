@@ -3855,3 +3855,27 @@ blockquote::before {
         height: auto !important;
     }
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .clinicSwiper {
+        padding: 10px 0 45px;
+    }
+
+    .clinicSwiper .swiper-slide img {
+        height: 300px;
+        border-radius: 16px;
+    }
+
+    .clinicSwiper .swiper-button-prev,
+    .clinicSwiper .swiper-button-next {
+        width: 42px;
+        height: 42px;
+    }
+
+    .clinicSwiper .swiper-button-prev::after,
+    .clinicSwiper .swiper-button-next::after {
+        font-size: 16px;
+    }
+}
