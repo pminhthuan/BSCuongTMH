@@ -1,318 +1,216 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title data-i18n="page.title">
         Thạc sĩ Bác sĩ Nguyễn Quốc Cường | Phòng khám Tai Mũi Họng Đà Nẵng
     </title>
-
-    <meta name="description"
-        content="Phòng khám Tai Mũi Họng Đà Nẵng - Thạc sĩ Bác sĩ Nguyễn Quốc Cường chuyên khám và điều trị Tai Mũi Họng cho người lớn và trẻ em.">
-
-    <meta name="keywords" content="Tai Mũi Họng Đà Nẵng, bác sĩ tai mũi họng, phòng khám tai mũi họng">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <link rel="stylesheet" href="style.css">
-
+    <meta
+        content="Phòng khám Tai Mũi Họng Đà Nẵng - Thạc sĩ Bác sĩ Nguyễn Quốc Cường chuyên khám và điều trị Tai Mũi Họng cho người lớn và trẻ em."
+        data-i18n="page.desc" data-i18n-attr="content" name="description" />
+    <meta content="Tai Mũi Họng Đà Nẵng, bác sĩ tai mũi họng, phòng khám tai mũi họng" name="keywords" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-
     <!-- ================= HEADER ================= -->
-
     <header id="header">
-
         <div class="container">
-
             <div class="logo">
-
-                <img src="images/logo.png" alt="Logo">
-
+                <img alt="Logo" src="images/logo.png" />
                 <div class="logo-text">
-
-                    <h2>
+                    <h2 data-i18n="logo.title">
                         PK TAI MŨI HỌNG ĐÀ NẴNG
                     </h2>
-
-                    <span>
+                    <span data-i18n="logo.subtitle">
                         Thạc sĩ Bác sĩ Nguyễn Quốc Cường
                     </span>
-
                 </div>
-
             </div>
-
             <nav>
-
                 <ul>
-
                     <li>
-
-                        <a href="#home" class="active">
+                        <a class="active" data-i18n="nav.home" href="#home">
                             Trang chủ
                         </a>
-
                     </li>
-
                     <li>
-
-                        <a href="#about">
+                        <a data-i18n="nav.about" href="#about">
                             Giới thiệu
                         </a>
-
                     </li>
-
                     <li>
-
-                        <a href="#services">
+                        <a data-i18n="nav.services" href="#services">
                             Dịch vụ
                         </a>
-
                     </li>
-
-                    <li>
-
-                        <a href="#gallery">
+                    <!-- <li>
+<a data-i18n="nav.gallery" href="#gallery">
                             Hình ảnh
                         </a>
-
-                    </li>
-
+</li> -->
                     <li>
-
-                        <a href="#reviews">
+                        <a data-i18n="nav.reviews" href="#reviews">
                             Đánh giá
                         </a>
-
                     </li>
-
                     <li>
-
-                        <a href="#contact">
+                        <a data-i18n="nav.contact" href="#contact">
                             Liên hệ
                         </a>
-
                     </li>
-
                 </ul>
-
             </nav>
-
             <div class="header-right">
-
-                <a href="tel:0931936909" class="header-phone">
-
+                <a class="header-phone" href="tel:0931936909">
                     <i class="fa-solid fa-phone"></i>
 
                     0931 936 909
 
                 </a>
-
+                <div class="lang-toggle" role="group" aria-label="Chọn ngôn ngữ / Language">
+                    <button data-lang-option="vi" type="button">VI</button>
+                    <button data-lang-option="en" type="button">EN</button>
+                </div>
                 <button id="mobileMenu">
-
                     <i class="fa-solid fa-bars"></i>
-
                 </button>
-
             </div>
-
         </div>
-
     </header>
-
     <!-- ================= TOP BANNER ================= -->
-
     <section class="top-banner">
-
-        <img src="images/banner.jpg" alt="Banner phòng khám">
-
+        <img alt="Banner phòng khám" data-i18n="topbanner.alt" data-i18n-attr="alt" src="images/banner.jpg" />
     </section>
-
     <!-- ================= HERO ================= -->
-
-    <section id="home" class="hero">
-
+    <section class="hero" id="home">
         <div class="container hero-wrapper">
-
             <div class="hero-left">
-
-                <span class="hero-subtitle">
+                <span class="hero-subtitle" data-i18n="hero.subtitle">
 
                     PHÒNG KHÁM TAI MŨI HỌNG ĐÀ NẴNG
 
                 </span>
-
-                <h1>
+                <h1 data-i18n="hero.title">
 
                     Thạc sĩ Bác sĩ
-                    <br>
+                    <br />
                     Nguyễn Quốc Cường
 
                 </h1>
-
-                <p class="hero-description">
+                <p class="hero-description" data-i18n="hero.desc">
                     Chuyên khám, nội soi và điều trị bệnh Tai Mũi Họng
                     cho trẻ em và người lớn tại Đà Nẵng.
                 </p>
-
                 <div class="hero-highlights">
-
-                    <div>
+                    <div data-i18n="hero.highlight.0">
                         <i class="fa-solid fa-circle-check"></i>
                         Nội soi Tai Mũi Họng Full HD
                     </div>
-
-                    <div>
+                    <div data-i18n="hero.highlight.1">
                         <i class="fa-solid fa-circle-check"></i>
                         Điều trị hạn chế lạm dụng kháng sinh
                     </div>
-
-                    <div>
+                    <div data-i18n="hero.highlight.2">
                         <i class="fa-solid fa-circle-check"></i>
                         Theo dõi và dự phòng tái phát
                     </div>
-
                 </div>
-
                 <div class="hero-buttons">
-
-                    <a href="tel:0931936909" class="btn btn-outline-dark">
+                    <a class="btn btn-outline-dark" data-i18n="hero.btn.call" href="tel:0931936909">
                         <i class="fa-solid fa-phone"></i>
                         Gọi ngay
                     </a>
-
-                    <a href="#about" class="btn btn-outline-dark">
+                    <a class="btn btn-outline-dark" data-i18n="hero.btn.learn" href="#about">
 
                         Tìm hiểu thêm
 
                     </a>
-
                 </div>
-
             </div>
-
             <div class="hero-right">
-
-                <img src="images/doctor-2.jpg">
-
+                <img src="images/doctor-2.jpg" />
             </div>
-
         </div>
-
     </section>
-
     <!-- ================= MAIN CONTENT ================= -->
-
     <main>
         <!-- ===================================================== -->
         <!-- ABOUT -->
         <!-- ===================================================== -->
-
-        <section id="about" class="section about-section">
-
+        <section class="section about-section" id="about">
             <div class="container">
-
                 <div class="about-wrapper">
-
                     <!-- Hình bên trái -->
-
                     <div class="about-image reveal">
-
-                        <img src="images/doctor-1.jpg" alt="Bác sĩ Nguyễn Quốc Cường">
-
+                        <img alt="Bác sĩ Nguyễn Quốc Cường" data-i18n="about.img.alt" data-i18n-attr="alt"
+                            src="images/doctor-1.jpg" />
                     </div>
-
                     <!-- Nội dung -->
-
                     <div class="about-content reveal">
-
-                        <span class="section-subtitle">
+                        <span class="section-subtitle" data-i18n="about.subtitle">
 
                             PHÒNG KHÁM TAI MŨI HỌNG ĐÀ NẴNG
 
                         </span>
-
-                        <h2>
+                        <h2 data-i18n="about.title">
 
                             Thạc sĩ Bác sĩ Nguyễn Quốc Cường
 
                         </h2>
-
-                        <p class="doctor-position">
+                        <p class="doctor-position" data-i18n="about.position">
 
                             Hiện công tác tại Khoa Tai Mũi Họng,
                             Bệnh viện Phụ Sản - Nhi Đà Nẵng.
 
                         </p>
-
-                        <p class="doctor-highlight">
+                        <p class="doctor-highlight" data-i18n="about.highlight">
 
                             Chuyên khám, nội soi và điều trị các bệnh lý
-                            Tai Mũi Họng cho trẻ em và người lớn với phương châm
+                            Tai Mũi Họng, Hô hấp cho trẻ em và người lớn với phương châm
                             <strong>chẩn đoán chính xác - điều trị hiệu quả - hạn chế lạm dụng kháng sinh.</strong>
-
                         </p>
-
-                        <hr>
-
+                        <hr />
                         <!-- Accordion -->
-
                         <div class="accordion">
-
                             <!-- Item -->
-
                             <div class="accordion-item active">
-
                                 <div class="accordion-header">
-
-                                    <h4>
+                                    <h4 data-i18n="about.acc.director.title">
 
                                         Phụ trách phòng khám
 
                                     </h4>
-
                                     <i class="fa-solid fa-chevron-down"></i>
-
                                 </div>
-
-                                <div class="accordion-body">
-
+                                <div class="accordion-body" data-i18n="about.acc.director.body">
                                     <p>
                                         Thạc sĩ Bác sĩ Nguyễn Quốc Cường hiện là bác sĩ chuyên khoa Tai Mũi Họng,
                                         đang công tác tại Khoa Tai Mũi Họng,
                                         Bệnh viện Phụ Sản - Nhi Đà Nẵng.
                                     </p>
-
                                     <p>
                                         Tốt nghiệp Bác sĩ Đa khoa và Thạc sĩ chuyên ngành Tai Mũi Họng
                                         tại Trường Đại học Y Dược Huế.
                                     </p>
-
                                     <p>
                                         Là thành viên Ban Chấp hành Hội Thầy thuốc trẻ
                                         thành phố Đà Nẵng.
                                     </p>
-
                                     <p>
                                         Thường xuyên tham gia các khóa đào tạo chuyên sâu
                                         trong và ngoài nước nhằm cập nhật các kỹ thuật
                                         và phương pháp điều trị tiên tiến.
                                     </p>
-
                                     <p>
                                         Với nhiều năm kinh nghiệm trong khám,
                                         điều trị và phẫu thuật Tai Mũi Họng,
@@ -320,151 +218,103 @@
                                         giải pháp điều trị hiệu quả,
                                         an toàn và phù hợp với từng người bệnh.
                                     </p>
-
                                 </div>
-
                             </div>
-
                             <!-- Item -->
-
                             <div class="accordion-item">
-
                                 <div class="accordion-header">
-
-                                    <h4>
+                                    <h4 data-i18n="about.acc.expertise.title">
 
                                         Chuyên môn
 
                                     </h4>
-
                                     <i class="fa-solid fa-chevron-down"></i>
-
                                 </div>
-
                                 <div class="accordion-body">
-
                                     <ul>
-
-                                        <li>Khám và điều trị bệnh Tai Mũi Họng cho trẻ em và người lớn.</li>
-
-                                        <li>Nội soi Tai - Mũi - Họng bằng hệ thống Full HD.</li>
-
-                                        <li>Phát hiện sớm các bất thường và ung thư vùng Tai Mũi Họng.</li>
-
-                                        <li>Điều trị viêm tai giữa, viêm xoang, viêm mũi dị ứng.</li>
-
-                                        <li>Điều trị viêm amidan, viêm VA và các bệnh lý họng.</li>
-
-                                        <li>Điều trị chóng mặt, ù tai, nghe kém.</li>
-
-                                        <li>Tư vấn và theo dõi trước - sau phẫu thuật Tai Mũi Họng.</li>
-
-                                        <li>Lấy dị vật Tai Mũi Họng và làm thuốc tai.</li>
-
+                                        <li data-i18n="about.acc.expertise.li.0">Khám và điều trị bệnh Tai Mũi Họng, Hô
+                                            hấp cho trẻ em và người lớn.</li>
+                                        <li data-i18n="about.acc.expertise.li.1">Nội soi Tai - Mũi - Họng bằng hệ thống
+                                            Full HD.</li>
+                                        <li data-i18n="about.acc.expertise.li.2">Phát hiện sớm các bất thường và ung thư
+                                            vùng Tai Mũi Họng.</li>
+                                        <li data-i18n="about.acc.expertise.li.3">Điều trị viêm tai giữa, viêm xoang,
+                                            viêm mũi dị ứng.</li>
+                                        <li data-i18n="about.acc.expertise.li.4">Điều trị viêm amidan, viêm VA và các
+                                            bệnh lý họng.</li>
+                                        <li data-i18n="about.acc.expertise.li.5">Điều trị chóng mặt, ù tai, nghe kém.
+                                        </li>
+                                        <li data-i18n="about.acc.expertise.li.6">Tư vấn và theo dõi trước - sau phẫu
+                                            thuật Tai Mũi Họng.</li>
+                                        <li data-i18n="about.acc.expertise.li.7">Lấy dị vật Tai Mũi Họng và làm thuốc
+                                            tai.</li>
                                     </ul>
-
                                 </div>
-
                             </div>
-
                             <!-- Item -->
-
                             <div class="accordion-item">
-
                                 <div class="accordion-header">
-
-                                    <h4>
+                                    <h4 data-i18n="about.acc.hours.title">
 
                                         Thời gian làm việc
 
                                     </h4>
-
                                     <i class="fa-solid fa-chevron-down"></i>
-
                                 </div>
-
-                                <div class="accordion-body">
-
+                                <div class="accordion-body" data-i18n="about.acc.hours.body">
                                     <p><strong>Thứ 2 - Thứ 6</strong></p>
-
                                     <p>17:30 - 20:00</p>
-
-                                    <hr>
-
+                                    <hr />
                                     <p><strong>Thứ 7 - Chủ nhật</strong></p>
-
                                     <p>08:00 - 11:00</p>
-
                                     <p>14:00 - 19:00</p>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div class="doctor-info-grid">
-
                             <div class="info-card">
                                 <i class="fa-solid fa-hospital"></i>
-                                <h5>Công tác</h5>
-                                <p>Bệnh viện Phụ Sản - Nhi Đà Nẵng</p>
+                                <h5 data-i18n="about.info.work.title">Công tác</h5>
+                                <p data-i18n="about.info.work.value">Bệnh viện Phụ Sản - Nhi Đà Nẵng</p>
                             </div>
-
                             <div class="info-card">
                                 <i class="fa-solid fa-graduation-cap"></i>
-                                <h5>Đào tạo</h5>
-                                <p>Đại học Y Dược Huế</p>
+                                <h5 data-i18n="about.info.edu.title">Đào tạo</h5>
+                                <p data-i18n="about.info.edu.value">Đại học Y Dược Huế</p>
                             </div>
-
                             <div class="info-card">
                                 <i class="fa-solid fa-award"></i>
-                                <h5>Chuyên môn</h5>
-                                <p>Thạc sĩ Tai Mũi Họng</p>
+                                <h5 data-i18n="about.info.expertise.title">Chuyên môn</h5>
+                                <p data-i18n="about.info.expertise.value">Thạc sĩ Tai Mũi Họng</p>
                             </div>
-
                             <div class="info-card">
                                 <i class="fa-solid fa-user-doctor"></i>
-                                <h5>Đối tượng</h5>
-                                <p>Trẻ em và người lớn</p>
+                                <h5 data-i18n="about.info.audience.title">Đối tượng</h5>
+                                <p data-i18n="about.info.audience.value">Trẻ em và người lớn</p>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
         <!-- ===================================================== -->
         <!-- DOCTOR INTRO -->
         <!-- ===================================================== -->
-
         <section class="section doctor-section">
-
             <div class="container">
-
                 <div class="doctor-wrapper">
-
                     <div class="doctor-content reveal">
-
-                        <span class="section-subtitle">
+                        <span class="section-subtitle" data-i18n="doctorintro.subtitle">
 
                             GIỚI THIỆU
 
                         </span>
-
-                        <h2>
+                        <h2 data-i18n="doctorintro.title">
 
                             Bác sĩ luôn đồng hành cùng sức khỏe của bạn
 
                         </h2>
-
-                        <p>
+                        <p data-i18n="doctorintro.p1">
 
                             Với nhiều năm kinh nghiệm trong lĩnh vực
                             Tai Mũi Họng,
@@ -472,16 +322,14 @@
                             luôn hướng đến phương châm:
 
                         </p>
-
-                        <blockquote>
+                        <blockquote data-i18n="doctorintro.quote">
 
                             "Khám bệnh tận tâm,
                             chẩn đoán chính xác,
                             điều trị hiệu quả."
 
                         </blockquote>
-
-                        <p>
+                        <p data-i18n="doctorintro.p2">
 
                             Phòng khám được đầu tư hệ thống
                             nội soi hiện đại,
@@ -491,681 +339,445 @@
                             cho người bệnh.
 
                         </p>
-
                         <div class="doctor-features">
-
                             <div class="feature">
-
                                 <i class="fa-solid fa-user-doctor"></i>
-
                                 <div>
-
-                                    <h5>
+                                    <h5 data-i18n="doctorintro.feature.expert.title">
 
                                         Chuyên môn cao
 
                                     </h5>
-
-                                    <p>
+                                    <p data-i18n="doctorintro.feature.expert.desc">
 
                                         Điều trị chuyên sâu
                                         Tai Mũi Họng.
 
                                     </p>
-
                                 </div>
-
                             </div>
-
                             <div class="feature">
-
                                 <i class="fa-solid fa-stethoscope"></i>
-
                                 <div>
-
-                                    <h5>
+                                    <h5 data-i18n="doctorintro.feature.equip.title">
 
                                         Thiết bị hiện đại
 
                                     </h5>
-
-                                    <p>
+                                    <p data-i18n="doctorintro.feature.equip.desc">
 
                                         Nội soi chuẩn bệnh viện.
 
                                     </p>
-
                                 </div>
-
                             </div>
-
                             <div class="feature">
-
                                 <i class="fa-solid fa-heart-pulse"></i>
-
                                 <div>
-
-                                    <h5>
+                                    <h5 data-i18n="doctorintro.feature.devoted.title">
 
                                         Tận tâm
 
                                     </h5>
-
-                                    <p>
+                                    <p data-i18n="doctorintro.feature.devoted.desc">
 
                                         Luôn đặt người bệnh
                                         lên hàng đầu.
 
                                     </p>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="doctor-image reveal">
-
-                        <img src="images/2aoboqk9qmyn9p2c7waktem7yg8czk85xqlp1bzc4.jpg" alt="Khám Tai Mũi Họng">
-
+                        <img alt="Khám Tai Mũi Họng" data-i18n="doctorintro.img.alt" data-i18n-attr="alt"
+                            src="images/2aoboqk9qmyn9p2c7waktem7yg8czk85xqlp1bzc4.jpg" />
                     </div>
-
                 </div>
-
             </div>
-
         </section>
         <!-- ===================================================== -->
         <!-- EQUIPMENT -->
         <!-- ===================================================== -->
-
-        <section id="equipment" class="section equipment-section">
-
+        <section class="section equipment-section" id="equipment">
             <div class="container">
-
                 <div class="equipment-wrapper">
-
                     <div class="equipment-content reveal">
-
-                        <span class="section-subtitle">
+                        <span class="section-subtitle" data-i18n="equip.subtitle">
                             TRANG THIẾT BỊ
                         </span>
-
-                        <h2>
+                        <h2 data-i18n="equip.title">
                             Hệ thống thiết bị hiện đại
                         </h2>
-
-                        <p>
+                        <p data-i18n="equip.p.0">
 
                             Phòng khám được đầu tư hệ thống máy nội soi Tai Mũi Họng
                             hiện đại, đồng bộ với các bệnh viện lớn, hỗ trợ chẩn đoán
                             nhanh chóng và chính xác.
 
                         </p>
-
-                        <p>
+                        <p data-i18n="equip.p.1">
 
                             Toàn bộ thiết bị đều được bảo dưỡng định kỳ,
                             đáp ứng tiêu chuẩn vô khuẩn trong quá trình khám
                             và điều trị.
 
                         </p>
-
-                        <p>
+                        <p data-i18n="equip.p.2">
 
                             Không gian khám rộng rãi, sạch sẽ,
                             tạo cảm giác thoải mái cho người bệnh,
                             đặc biệt là trẻ nhỏ.
 
                         </p>
-
                         <div class="equipment-list">
-
-                            <div class="equipment-item">
+                            <div class="equipment-item" data-i18n="equip.item.0">
                                 <i class="fa-solid fa-circle-check"></i>
                                 Nội soi Tai Mũi Họng HD
                             </div>
-
-                            <div class="equipment-item">
+                            <div class="equipment-item" data-i18n="equip.item.1">
                                 <i class="fa-solid fa-circle-check"></i>
                                 Camera Full HD
                             </div>
-
-                            <div class="equipment-item">
+                            <div class="equipment-item" data-i18n="equip.item.2">
                                 <i class="fa-solid fa-circle-check"></i>
                                 Hệ thống hút trung tâm
                             </div>
-
-                            <div class="equipment-item">
+                            <div class="equipment-item" data-i18n="equip.item.3">
                                 <i class="fa-solid fa-circle-check"></i>
                                 Máy khí dung
                             </div>
-
-                            <div class="equipment-item">
+                            <div class="equipment-item" data-i18n="equip.item.4">
                                 <i class="fa-solid fa-circle-check"></i>
                                 Bộ dụng cụ tiểu phẫu
                             </div>
-
-                            <div class="equipment-item">
+                            <div class="equipment-item" data-i18n="equip.item.5">
                                 <i class="fa-solid fa-circle-check"></i>
                                 Thiết bị vô khuẩn
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="equipment-image reveal">
-
-                        <img src="images/equipment.jpg" alt="Trang thiết bị">
-
+                        <img alt="Trang thiết bị" data-i18n="equip.img.alt" data-i18n-attr="alt"
+                            src="images/equipment.jpg" />
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
         <!-- ===================================================== -->
         <!-- SERVICES -->
         <!-- ===================================================== -->
-
-        <section id="services" class="section services-section">
-
+        <section class="section services-section" id="services">
             <div class="container">
-
                 <div class="section-title">
-
-                    <span>
+                    <span data-i18n="services.subtitle">
                         DỊCH VỤ
                     </span>
-
-                    <h2>
+                    <h2 data-i18n="services.title">
 
                         Các dịch vụ tại phòng khám
 
                     </h2>
-
-                    <p class="section-description">
+                    <p class="section-description" data-i18n="services.desc">
 
                         Phòng khám cung cấp các dịch vụ khám, nội soi, điều trị và chăm sóc chuyên khoa
-                        Tai Mũi Họng cùng một số bệnh lý hô hấp cho trẻ em và người lớn.
+                        Tai Mũi Họng cùng các bệnh lý hô hấp cho trẻ em và người lớn.
                         Với hệ thống thiết bị hiện đại và bác sĩ trực tiếp thăm khám,
                         người bệnh được chẩn đoán chính xác và tư vấn phương pháp điều trị phù hợp.
 
                     </p>
-
                 </div>
-
-
                 <div class="service-grid">
-
                     <div class="service-card reveal">
-
-                        <img src="images/tmh.jpg" alt="Khám Tai Mũi Họng">
-
-                        <h3>
+                        <img alt="Khám Tai Mũi Họng" data-i18n="svc.0.img.alt" data-i18n-attr="alt"
+                            src="images/tmh.jpg" />
+                        <h3 data-i18n="svc.0.title">
                             Khám và điều trị
                             Tai Mũi Họng
                         </h3>
-
                         <ul>
-
-                            <li>Đau tai, ù tai, nghe kém.</li>
-
-                            <li>Chảy mủ tai.</li>
-
-                            <li>Nghẹt mũi, sổ mũi.</li>
-
-                            <li>Giảm hoặc mất ngửi.</li>
-
-                            <li>Đau họng, nuốt vướng.</li>
-
-                            <li>Khàn tiếng.</li>
-
-                            <li>Đau đầu, chóng mặt do bệnh lý Tai Mũi Họng.</li>
-
+                            <li data-i18n="svc.0.li.0">Đau tai, ù tai, nghe kém.</li>
+                            <li data-i18n="svc.0.li.1">Chảy mủ tai.</li>
+                            <li data-i18n="svc.0.li.2">Nghẹt mũi, sổ mũi.</li>
+                            <li data-i18n="svc.0.li.3">Giảm hoặc mất ngửi.</li>
+                            <li data-i18n="svc.0.li.4">Đau họng, nuốt vướng.</li>
+                            <li data-i18n="svc.0.li.5">Khàn tiếng.</li>
+                            <li data-i18n="svc.0.li.6">Đau đầu, chóng mặt do bệnh lý Tai Mũi Họng.</li>
                         </ul>
-
                     </div>
-
                     <div class="service-card reveal">
-
-                        <img src="images/khamhohap.jfif" alt="Khám bệnh hô hấp">
-
-                        <h3>
+                        <img alt="Khám bệnh hô hấp" data-i18n="svc.1.img.alt" data-i18n-attr="alt"
+                            src="images/khamhohap.jfif" />
+                        <h3 data-i18n="svc.1.title">
                             Khám và điều trị
                             bệnh lý hô hấp
                         </h3>
-
                         <ul>
-
-                            <li>Viêm hô hấp trên.</li>
-
-                            <li>Viêm phế quản.</li>
-
-                            <li>Viêm tiểu phế quản.</li>
-
-                            <li>Viêm phổi.</li>
-
-                            <li>Hen phế quản.</li>
-
-                            <li>Ho kéo dài.</li>
-
-                            <li>Khám cho trẻ em và người lớn.</li>
-
+                            <li data-i18n="svc.1.li.0">Viêm hô hấp trên.</li>
+                            <li data-i18n="svc.1.li.1">Viêm phế quản.</li>
+                            <li data-i18n="svc.1.li.2">Viêm tiểu phế quản.</li>
+                            <li data-i18n="svc.1.li.3">Viêm phổi.</li>
+                            <li data-i18n="svc.1.li.4">Hen phế quản.</li>
+                            <li data-i18n="svc.1.li.5">Ho kéo dài.</li>
+                            <li data-i18n="svc.1.li.6">Khám cho trẻ em và người lớn.</li>
                         </ul>
-
                     </div>
-
                     <!-- Mũi -->
-
                     <div class="service-card reveal">
-
-                        <img src="images/noisoiHD.jpg" alt="Nội soi Tai Mũi Họng">
-
-                        <h3>
+                        <img alt="Nội soi Tai Mũi Họng" data-i18n="svc.2.img.alt" data-i18n-attr="alt"
+                            src="images/noisoiHD.jpg" />
+                        <h3 data-i18n="svc.2.title">
                             Nội soi
                             Tai Mũi Họng Full HD
                         </h3>
-
                         <ul>
-
-                            <li>Nội soi tai.</li>
-
-                            <li>Nội soi mũi xoang.</li>
-
-                            <li>Nội soi thanh quản.</li>
-
-                            <li>Phát hiện sớm bất thường.</li>
-
-                            <li>Tầm soát ung thư vùng Tai Mũi Họng.</li>
-
-                            <li>Theo dõi sau điều trị.</li>
-
+                            <li data-i18n="svc.2.li.0">Nội soi tai.</li>
+                            <li data-i18n="svc.2.li.1">Nội soi mũi xoang.</li>
+                            <li data-i18n="svc.2.li.2">Nội soi thanh quản.</li>
+                            <li data-i18n="svc.2.li.3">Phát hiện sớm bất thường.</li>
+                            <li data-i18n="svc.2.li.4">Tầm soát ung thư vùng Tai Mũi Họng.</li>
+                            <li data-i18n="svc.2.li.5">Theo dõi sau điều trị.</li>
                         </ul>
-
                     </div>
-
                     <!-- Họng -->
-
                     <div class="service-card reveal">
-
-                        <img src="images/hutmui.jpg">
-
-                        <h3>
+                        <img src="images/hutmui.jpg" />
+                        <h3 data-i18n="svc.3.title">
 
                             Hút rửa
                             Mũi xoang
 
                         </h3>
-
                         <ul>
-
-                            <li>Hút rửa mũi xoang qua nội soi.</li>
-
-                            <li>Rửa xoang Proetz.</li>
-
-                            <li>Điều trị viêm xoang.</li>
-
-                            <li>Điều trị viêm mũi.</li>
-
-                            <li>Làm sạch dịch mủ.</li>
-
-                            <li>Hỗ trợ phục hồi sau điều trị.</li>
-
+                            <li data-i18n="svc.3.li.0">Hút rửa mũi xoang qua nội soi.</li>
+                            <li data-i18n="svc.3.li.1">Rửa xoang Proetz.</li>
+                            <li data-i18n="svc.3.li.2">Điều trị viêm xoang.</li>
+                            <li data-i18n="svc.3.li.3">Điều trị viêm mũi.</li>
+                            <li data-i18n="svc.3.li.4">Làm sạch dịch mủ.</li>
+                            <li data-i18n="svc.3.li.5">Hỗ trợ phục hồi sau điều trị.</li>
                         </ul>
-
                     </div>
-
                     <!-- Đầu cổ -->
-
                     <div class="service-card reveal">
-
-                        <img src="images/laydivatraytai.jpg">
-
-                        <h3>
+                        <img src="images/laydivatraytai.jpg" />
+                        <h3 data-i18n="svc.4.title">
 
                             Lấy dị vật
-                            & Lấy ráy tai
+                            &amp; Lấy ráy tai
 
                         </h3>
-
                         <ul>
-
-                            <li>Lấy dị vật tai.</li>
-
-                            <li>Lấy dị vật mũi.</li>
-
-                            <li>Lấy dị vật họng.</li>
-
-                            <li>Lấy ráy tai.</li>
-
-                            <li>Thực hiện nhẹ nhàng.</li>
-
-                            <li>An toàn theo quy trình y tế.</li>
-
+                            <li data-i18n="svc.4.li.0">Lấy dị vật tai.</li>
+                            <li data-i18n="svc.4.li.1">Lấy dị vật mũi.</li>
+                            <li data-i18n="svc.4.li.2">Lấy dị vật họng.</li>
+                            <li data-i18n="svc.4.li.3">Lấy ráy tai.</li>
+                            <li data-i18n="svc.4.li.4">Thực hiện nhẹ nhàng.</li>
+                            <li data-i18n="svc.4.li.5">An toàn theo quy trình y tế.</li>
                         </ul>
-
                     </div>
-
                     <div class="service-card reveal">
-
-                        <img src="images/lamthuoctai.jfif">
-
-                        <h3>
+                        <img src="images/lamthuoctai.jfif" />
+                        <h3 data-i18n="svc.5.title">
 
                             Làm thuốc tai
 
                         </h3>
-
                         <ul>
-
-                            <li>Làm thuốc tai.</li>
-
-                            <li>Điều trị viêm tai ngoài.</li>
-
-                            <li>Điều trị viêm tai giữa.</li>
-
-                            <li>Vệ sinh tai.</li>
-
-                            <li>Theo dõi hồi phục.</li>
-
-                            <li>Hạn chế tái phát.</li>
-
+                            <li data-i18n="svc.5.li.0">Làm thuốc tai.</li>
+                            <li data-i18n="svc.5.li.1">Điều trị viêm tai ngoài.</li>
+                            <li data-i18n="svc.5.li.2">Điều trị viêm tai giữa.</li>
+                            <li data-i18n="svc.5.li.3">Vệ sinh tai.</li>
+                            <li data-i18n="svc.5.li.4">Theo dõi hồi phục.</li>
+                            <li data-i18n="svc.5.li.5">Hạn chế tái phát.</li>
                         </ul>
-
                     </div>
-
                     <div class="service-card reveal">
-
-                        <img src="images/khidung.jfif">
-
-                        <h3>
+                        <img src="images/khidung.jfif" />
+                        <h3 data-i18n="svc.6.title">
 
                             Khí dung
                             Mũi Họng
 
                         </h3>
-
                         <ul>
-
-                            <li>Khí dung mũi.</li>
-
-                            <li>Khí dung họng.</li>
-
-                            <li>Hỗ trợ điều trị viêm đường hô hấp.</li>
-
-                            <li>Giảm phù nề.</li>
-
-                            <li>Giảm viêm.</li>
-
-                            <li>Hỗ trợ phục hồi nhanh.</li>
-
+                            <li data-i18n="svc.6.li.0">Khí dung mũi.</li>
+                            <li data-i18n="svc.6.li.1">Khí dung họng.</li>
+                            <li data-i18n="svc.6.li.2">Hỗ trợ điều trị viêm đường hô hấp.</li>
+                            <li data-i18n="svc.6.li.3">Giảm phù nề.</li>
+                            <li data-i18n="svc.6.li.4">Giảm viêm.</li>
+                            <li data-i18n="svc.6.li.5">Hỗ trợ phục hồi nhanh.</li>
                         </ul>
-
                     </div>
-
                     <div class="service-card reveal">
-
-                        <img src="images/hoatai.jpg">
-
-                        <h3>
+                        <img src="images/hoatai.jpg" />
+                        <h3 data-i18n="svc.7.title">
 
                             Bấm hoa tai
                             Chuẩn y tế
 
                         </h3>
-
                         <ul>
-
-                            <li>Dụng cụ vô khuẩn.</li>
-
-                            <li>Quy trình chuẩn y tế.</li>
-
-                            <li>Thực hiện nhanh.</li>
-
-                            <li>An toàn.</li>
-
-                            <li>Hướng dẫn chăm sóc sau bấm.</li>
-
+                            <li data-i18n="svc.7.li.0">Dụng cụ vô khuẩn.</li>
+                            <li data-i18n="svc.7.li.1">Quy trình chuẩn y tế.</li>
+                            <li data-i18n="svc.7.li.2">Thực hiện nhanh.</li>
+                            <li data-i18n="svc.7.li.3">An toàn.</li>
+                            <li data-i18n="svc.7.li.4">Hướng dẫn chăm sóc sau bấm.</li>
                         </ul>
-
                     </div>
-
                     <div class="service-card reveal">
-
-                        <img src="images/tuvansaukham.jpg">
-
-                        <h3>
+                        <img src="images/tuvansaukham.jpg" />
+                        <h3 data-i18n="svc.8.title">
 
                             Tư vấn phẫu thuật
                             và hậu phẫu
 
                         </h3>
-
                         <ul>
-
-                            <li>Tư vấn các phẫu thuật Tai Mũi Họng.</li>
-
-                            <li>Chăm sóc hậu phẫu.</li>
-
-                            <li>Theo dõi hồi phục.</li>
-
-                            <li>Tái khám định kỳ.</li>
-
-                            <li>Hướng dẫn chăm sóc tại nhà.</li>
-
+                            <li data-i18n="svc.8.li.0">Tư vấn các phẫu thuật Tai Mũi Họng.</li>
+                            <li data-i18n="svc.8.li.1">Chăm sóc hậu phẫu.</li>
+                            <li data-i18n="svc.8.li.2">Theo dõi hồi phục.</li>
+                            <li data-i18n="svc.8.li.3">Tái khám định kỳ.</li>
+                            <li data-i18n="svc.8.li.4">Hướng dẫn chăm sóc tại nhà.</li>
                         </ul>
-
                     </div>
-
                 </div>
-
-
                 <!-- ================================================= -->
-
-
             </div>
-
         </section>
-
         <section class="gallery-section section" id="gallery">
-
             <div class="container">
-
                 <div class="section-title">
-
-                    <span>HÌNH ẢNH</span>
-
-                    <h2>Không gian phòng khám</h2>
-
-                    <p class="section-description">
+                    <span data-i18n="gallery.subtitle">HÌNH ẢNH</span>
+                    <h2 data-i18n="gallery.title">Không gian phòng khám</h2>
+                    <p class="section-description" data-i18n="gallery.desc">
                         Không gian sạch sẽ, hiện đại cùng hệ thống trang thiết bị tiên tiến.
                     </p>
-
                 </div>
-
                 <div class="swiper clinicSwiper">
-
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide">
-                            <img src="images/Slider/2aoboqk9qmyn9p2c7wakteelnvjryf2zmufusswe2.jpg">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/Slider/2aoboqk9qmyn9p2c7waktekptc3wz1a2qkxlil1u3.jpg">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/Slider/2aoboqk9qmyn9p2c7waktelw1qdq8fcvlfns8eqs5.jpg">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/Slider/2aoboqk9qmyn9p2c7waktem7yg8czk85xqlp1bzc4.jpg">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/Slider/2aoboqk9qmyn9p2c7wakteqxblepsm1vnw1tlrys1.jpg">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/Slider/514044731_122162902796577789_8290337299478222404_n.jpg">
+                            <img src="images/Slider/2aoboqk9qmyn9p2c7wakteelnvjryf2zmufusswe2.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/Slider/644218157_122195849186577789_6804340032341685087_n.jpg">
+                            <img src="images/Slider/2aoboqk9qmyn9p2c7waktekptc3wz1a2qkxlil1u3.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/Slider/751322541_122211069278577789_9031901608303030815_n.jpg">
+                            <img src="images/Slider/2aoboqk9qmyn9p2c7waktelw1qdq8fcvlfns8eqs5.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/Slider/751578388_122211069644577789_3576525618091291519_n.jpg">
+                            <img src="images/Slider/2aoboqk9qmyn9p2c7waktem7yg8czk85xqlp1bzc4.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/Slider/751611393_122211069602577789_2432112975457487982_n.jpg">
+                            <img src="images/Slider/2aoboqk9qmyn9p2c7wakteqxblepsm1vnw1tlrys1.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/Slider/753893729_122211069140577789_6430165491559687220_n.jpg">
+                            <img src="images/Slider/514044731_122162902796577789_8290337299478222404_n.jpg" />
                         </div>
-
+                        <div class="swiper-slide">
+                            <img src="images/Slider/644218157_122195849186577789_6804340032341685087_n.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Slider/751322541_122211069278577789_9031901608303030815_n.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Slider/751578388_122211069644577789_3576525618091291519_n.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Slider/751611393_122211069602577789_2432112975457487982_n.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Slider/753893729_122211069140577789_6430165491559687220_n.jpg" />
+                        </div>
                     </div>
                     <div class="swiper-button-prev"></div>
-
                     <div class="swiper-button-next"></div>
-
                     <div class="swiper-pagination"></div>
-
                 </div>
-
+            </div>
         </section>
-
         <!-- ===================================================== -->
         <!-- REVIEWS -->
         <!-- ===================================================== -->
-
-        <section id="reviews" class="section review-section">
-
+        <section class="section review-section" id="reviews">
             <div class="container">
-
                 <div class="section-title">
-
-                    <span>
+                    <span data-i18n="reviews.subtitle">
                         ĐÁNH GIÁ
                     </span>
-
-                    <h2>
+                    <h2 data-i18n="reviews.title">
 
                         Bệnh nhân nói gì về chúng tôi
 
                     </h2>
-
                 </div>
-
                 <div class="review-wrapper">
-
                     <div class="review-card reveal">
-
                         <div class="review-top">
-
                             <div>
-
                                 <h4>
 
                                     Phước Võ
 
                                 </h4>
-
                                 <div class="stars">
-
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-
                                 </div>
-
                             </div>
-
                         </div>
-
-                        <p>
+                        <p data-i18n="reviews.card.0.text">
 
                             Bác sĩ rất tận tâm và thân thiện, quá trình khám nhẹ nhàng, chi phí hợp lý. Thuốc bác kê về
                             dùng thấy tình trạng viêm họng cải thiện rõ rệt. Mọi người nên thử nếu đang gặp vấn đề về
                             họng.
 
                         </p>
-
                     </div>
-
                     <div class="review-card reveal">
-
                         <div class="review-top">
-
                             <div>
-
                                 <h4>
 
                                     Nguyen Thuy
 
                                 </h4>
-
                                 <div class="stars">
-
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-
                                 </div>
-
                             </div>
-
                         </div>
-
-                        <p>
+                        <p data-i18n="reviews.card.1.text">
 
                             Bác sĩ nhiệt tình, dễ thương. Chi phí thăm khám rẻ. Phòng khám có thiết bị đầy đủ để soi
                             khám mũi họng cho các con.
 
                         </p>
-
                     </div>
-
                     <div class="review-card reveal">
-
                         <div class="review-top">
-
                             <div>
-
                                 <h4>
 
                                     Phạm Huyền
 
                                 </h4>
-
                                 <div class="stars">
-
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-
                                 </div>
-
                             </div>
-
                         </div>
-
-                        <p>
+                        <p data-i18n="reviews.card.2.text">
 
                             Mình khám ở bác Cường, được bác thăm khám cẩn thận và hướng dẫn tận tình nên đã hết. Con gái
                             mới bị viêm xoang, qua bác cũng đã ổn. Cảm giác là cứ theo đúng các loại thuốc bác kê, chăm
@@ -1173,266 +785,175 @@
                             cũng giải thích nhẹ nhàng cho người bệnh hiểu về bệnh tình nên rất là ưng ý. 🤗
 
                         </p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
         <!-- ===================================================== -->
         <!-- MAP -->
         <!-- ===================================================== -->
-
-        <section id="contact" class="section map-section">
-
+        <section class="section map-section" id="contact">
             <div class="container">
-
                 <div class="section-title">
-
-                    <span>
+                    <span data-i18n="contact.subtitle">
 
                         LIÊN HỆ
 
                     </span>
-
-                    <h2>
+                    <h2 data-i18n="contact.title">
 
                         Địa chỉ phòng khám
 
                     </h2>
-
                 </div>
-
                 <div class="map-wrapper">
-
                     <div class="map-box reveal">
-
-                        <iframe
+                        <iframe allowfullscreen="" height="450" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7668.813088373257!2d108.20709523117613!3d16.04437972624999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219be5db76c71%3A0x8ac968810762d451!2zMTI4IE5ndXnhu4VuIEjhu691IFRo4buNLCBIw7JhIEPGsOG7nW5nLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1784044740842!5m2!1svi!2s"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
+                            style="border:0;" width="600"></iframe>
                     </div>
-
                     <div class="contact-box reveal">
-
                         <div class="contact-item">
-
                             <i class="fa-solid fa-location-dot"></i>
-
                             <div>
-
-                                <h4>
+                                <h4 data-i18n="contact.item.address.title">
 
                                     Địa chỉ
 
                                 </h4>
-
-                                <p>
+                                <p data-i18n="contact.item.address.value">
 
                                     128 Nguyễn Hữu Thọ,
                                     Đà Nẵng
 
                                 </p>
-
                             </div>
-
                         </div>
-
                         <div class="contact-item">
-
                             <i class="fa-solid fa-phone"></i>
-
                             <div>
-
-                                <h4>
+                                <h4 data-i18n="contact.item.hotline.title">
 
                                     Hotline
 
                                 </h4>
-
-                                <p>
+                                <p data-i18n="contact.item.hotline.value">
 
                                     0931 936 909
 
                                 </p>
-
                             </div>
-
                         </div>
-
                         <div class="contact-item">
-
                             <i class="fa-solid fa-envelope"></i>
-
                             <div>
-
-                                <h4>
+                                <h4 data-i18n="contact.item.email.title">
 
                                     Email
 
                                 </h4>
-
-                                <p>
+                                <p data-i18n="contact.item.email.value">
 
                                     bscuongtmh.dn@gmail.com
 
                                 </p>
-
                             </div>
-
                         </div>
-
                         <div class="contact-item">
-
                             <i class="fa-solid fa-clock"></i>
-
                             <div>
-
-                                <h4>
+                                <h4 data-i18n="contact.item.hours.title">
 
                                     Giờ khám
 
                                 </h4>
-
-                                <p>
+                                <p data-i18n="contact.item.hours.value">
 
                                     Thứ 2 - Thứ 6
 
-                                    <br>
+                                    <br />
 
                                     17:30 - 20:00
 
-                                    <br><br>
+                                    <br /><br />
 
                                     Thứ 7, Chủ nhật
 
-                                    <br>
+                                    <br />
 
                                     08:00 - 11:00
 
-                                    <br>
+                                    <br />
 
                                     14:00 - 19:00
 
                                 </p>
-
                             </div>
-
                         </div>
-
                         <!-- <a href="#appointment" class="btn btn-primary full">
 
                             Đặt lịch khám
 
                         </a> -->
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
         <!-- ===================================================== -->
         <!-- NOTICE -->
         <!-- ===================================================== -->
-
         <section class="section notice-section">
-
             <div class="container">
-
                 <div class="notice-box reveal">
-
                     <i class="fa-solid fa-circle-info"></i>
-
                     <div>
-
-                        <h3>
+                        <h3 data-i18n="notice.title">
 
                             LƯU Ý QUAN TRỌNG ĐẾN QUÝ BỆNH NHÂN:
 
                         </h3>
-
-                        <p>
+                        <p data-i18n="notice.body">
 
                             Vì Bác sĩ Cường có thể có lịch trực đột xuất tại Bệnh viện Phụ Sản Nhi Đà Nẵng, thời gian
                             khám thực tế có thể sai lệch đôi chút so với bảng giờ cố định. Để không phải chờ đợi lâu,
                             vui lòng <b>gọi điện hoặc nhắn tin Zalo đặt lịch trước</b> khi đến khám.
 
                         </p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-
         <!-- ===================================================== -->
         <!-- FLOATING BUTTON -->
         <!-- ===================================================== -->
-
         <div class="floating-contact">
-
             <!-- Facebook -->
-
-            <a href="https://www.facebook.com/phongkhamtaimuihongdanang" target="_blank" class="float-btn facebook"
+            <a class="float-btn facebook" href="https://www.facebook.com/phongkhamtaimuihongdanang" target="_blank"
                 title="Facebook">
-
                 <i class="fab fa-facebook-f"></i>
-
             </a>
-
             <!-- Zalo cá nhân -->
-
-            <a href="https://zalo.me/0931936909" target="_blank" class="float-btn zalo" title="Zalo">
-
-                <img src="images/zalo.webp" alt="Zalo">
-
+            <a class="float-btn zalo" href="https://zalo.me/0931936909" target="_blank" title="Zalo">
+                <img alt="Zalo" src="images/zalo.webp" />
             </a>
-
             <!-- Gọi điện -->
-
-            <a href="tel:0931936909" class="float-btn phone" title="Gọi điện">
-
+            <a class="float-btn phone" data-i18n="float.phone.title" data-i18n-attr="title" href="tel:0931936909"
+                title="Gọi điện">
                 <i class="fa-solid fa-phone"></i>
-
             </a>
-
             <!-- TikTok -->
-
-            <a href="https://www.tiktok.com/@bsnguyenquoccuong" target="_blank" class="float-btn tiktok" title="TikTok">
-
+            <a class="float-btn tiktok" href="https://www.tiktok.com/@bsnguyenquoccuong" target="_blank" title="TikTok">
                 <i class="fab fa-tiktok"></i>
-
             </a>
-
             <!-- Back to top -->
-
-            <a href="#home" id="backToTop" class="float-btn top">
-
+            <a class="float-btn top" href="#home" id="backToTop">
                 <i class="fa-solid fa-chevron-up"></i>
-
             </a>
-
         </div>
         <!-- ===================================================== -->
         <!-- APPOINTMENT -->
         <!-- ===================================================== -->
-
         <!-- <section id="appointment" class="section appointment-section">
 
             <div class="container">
@@ -1530,326 +1051,211 @@
             </div>
 
         </section> -->
-
-
-
-
-
         <!-- ===================================================== -->
         <!-- FOOTER -->
         <!-- ===================================================== -->
-
         <footer id="footer">
-
             <div class="container">
-
                 <div class="footer-grid">
-
                     <!-- Column -->
-
                     <div class="footer-column">
-
-                        <h3>
+                        <h3 data-i18n="footer.col1.title">
 
                             Phòng khám Tai Mũi Họng
 
                         </h3>
-
-                        <p>
+                        <p data-i18n="footer.col1.desc">
 
                             Chuyên khám và điều trị
                             các bệnh lý Tai - Mũi - Họng
                             cho người lớn và trẻ em.
 
                         </p>
-
                         <div class="footer-social">
-
                             <a href="https://www.facebook.com/phongkhamtaimuihongdanang" target="_blank"
                                 title="Facebook">
-
                                 <i class="fab fa-facebook-f"></i>
-
                             </a>
-
                             <a href="https://zalo.me/0931936909" target="_blank" title="Zalo">
-
-                                <img src="images/zalo.webp" alt="Zalo" class="footer-zalo">
-
+                                <img alt="Zalo" class="footer-zalo" src="images/zalo.webp" />
                             </a>
-
                             <a href="https://www.tiktok.com/@" target="_blank" title="TikTok">
-
                                 <i class="fab fa-tiktok"></i>
-
                             </a>
-
                         </div>
-
                     </div>
-
                     <!-- Column -->
-
                     <div class="footer-column">
-
-                        <h3>
+                        <h3 data-i18n="footer.col2.title">
 
                             Liên kết
 
                         </h3>
-
                         <ul>
-
                             <li>
-
-                                <a href="#home">
+                                <a data-i18n="footer.nav.home" href="#home">
 
                                     Trang chủ
 
                                 </a>
-
                             </li>
-
                             <li>
-
-                                <a href="#about">
+                                <a data-i18n="footer.nav.about" href="#about">
 
                                     Giới thiệu
 
                                 </a>
-
                             </li>
-
                             <li>
-
-                                <a href="#services">
+                                <a data-i18n="footer.nav.services" href="#services">
 
                                     Dịch vụ
 
                                 </a>
-
                             </li>
-
                             <li>
-
-                                <a href="#reviews">
+                                <a data-i18n="footer.nav.reviews" href="#reviews">
 
                                     Đánh giá
 
                                 </a>
-
                             </li>
-
                             <li>
-
-                                <a href="#contact">
+                                <a data-i18n="footer.nav.contact" href="#contact">
 
                                     Liên hệ
 
                                 </a>
-
                             </li>
-
                         </ul>
-
                     </div>
-
                     <!-- Column -->
-
                     <div class="footer-column">
-
-                        <h3>
+                        <h3 data-i18n="footer.col3.title">
 
                             Thông tin
 
                         </h3>
-
                         <ul>
-
-                            <li>
-
+                            <li data-i18n="footer.info.address">
                                 <i class="fa-solid fa-location-dot"></i>
 
                                 128 Nguyễn Hữu Thọ,
                                 Đà Nẵng
 
                             </li>
-
-                            <li>
-
+                            <li data-i18n="footer.info.hotline">
                                 <i class="fa-solid fa-phone"></i>
 
                                 0931 936 909
 
                             </li>
-
-                            <li>
-
+                            <li data-i18n="footer.info.email">
                                 <i class="fa-solid fa-envelope"></i>
 
                                 bscuongtmh.dn@gmail.com
 
                             </li>
-
                         </ul>
-
                     </div>
-
                     <!-- Column -->
-
                     <div class="footer-column">
-
-                        <h3>
+                        <h3 data-i18n="footer.col4.title">
 
                             Giờ khám
 
                         </h3>
-
                         <table class="working-time">
-
                             <tr>
-
-                                <td>Thứ 2 - Thứ 6</td>
-
-                                <td>17:30 - 20:00</td>
-
+                                <td data-i18n="footer.hours.0.day">Thứ 2 - Thứ 6</td>
+                                <td data-i18n="footer.hours.0.time">17:30 - 20:00</td>
                             </tr>
-
                             <tr>
-
-                                <td>Thứ 7, Chủ nhật</td>
-
-                                <td>08:00 - 11:00<br>14:00 - 19:00</td>
-
+                                <td data-i18n="footer.hours.1.day">Thứ 7, Chủ nhật</td>
+                                <td data-i18n="footer.hours.1.time">08:00 - 11:00<br />14:00 - 19:00</td>
                             </tr>
-
                         </table>
-
                     </div>
-
                 </div>
-
-                <div class="footer-bottom">
+                <div class="footer-bottom" data-i18n="footer.bottom">
 
                     © 2026 Phòng khám Tai Mũi Họng Đà Nẵng.
 
                     All Rights Reserved.
 
                 </div>
-
             </div>
-
         </footer>
-
-
-
-
-
         <!-- ===================================================== -->
         <!-- MOBILE MENU -->
         <!-- ===================================================== -->
-
-        <div id="mobileNav" class="mobile-nav">
-
+        <div class="mobile-nav" id="mobileNav">
             <div class="mobile-nav-header">
-
-                <h3>
+                <h3 data-i18n="mobilenav.title">
 
                     MENU
 
                 </h3>
-
                 <button id="closeMenu">
-
                     <i class="fa-solid fa-xmark"></i>
-
                 </button>
-
             </div>
-
+            <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Chọn ngôn ngữ / Language">
+                <button data-lang-option="vi" type="button">Tiếng Việt</button>
+                <button data-lang-option="en" type="button">English</button>
+            </div>
             <ul>
-
                 <li>
-
-                    <a href="#home">
+                    <a data-i18n="mnav.nav.home" href="#home">
 
                         Trang chủ
 
                     </a>
-
                 </li>
-
                 <li>
-
-                    <a href="#about">
+                    <a data-i18n="mnav.nav.about" href="#about">
 
                         Giới thiệu
 
                     </a>
-
                 </li>
-
                 <li>
-
-                    <a href="#services">
+                    <a data-i18n="mnav.nav.services" href="#services">
 
                         Dịch vụ
 
                     </a>
-
                 </li>
-
                 <li>
-
-                    <a href="#equipment">
+                    <a data-i18n="mnav.nav.equipment" href="#equipment">
 
                         Trang thiết bị
 
                     </a>
-
                 </li>
-
                 <li>
-
-                    <a href="#reviews">
+                    <a data-i18n="mnav.nav.reviews" href="#reviews">
 
                         Đánh giá
 
                     </a>
-
                 </li>
-
                 <li>
-
-                    <a href="#contact">
+                    <a data-i18n="mnav.nav.contact" href="#contact">
 
                         Liên hệ
 
                     </a>
-
                 </li>
-
             </ul>
-
         </div>
-
-
-
-
-
     </main>
-
-
-
-
-
     <!-- ===================================================== -->
     <!-- JAVASCRIPT -->
     <!-- ===================================================== -->
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lang.js"></script>
     <script src="app.js"></script>
-
 </body>
 
 </html>

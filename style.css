@@ -489,6 +489,74 @@ nav a.active::after {
 
 }
 
+/*==================================================
+=               LANGUAGE TOGGLE
+==================================================*/
+
+.lang-toggle {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2px;
+
+    padding: 3px;
+
+    background: rgba(24, 160, 167, .08);
+
+    border: 1px solid rgba(24, 160, 167, .35);
+
+    border-radius: 40px;
+
+}
+
+.lang-toggle button {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--primary-dark);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: .3px;
+
+    padding: 6px 14px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    line-height: 1;
+
+}
+
+.lang-toggle button:hover {
+
+    color: var(--primary);
+
+}
+
+.lang-toggle button.active {
+
+    background: var(--primary);
+
+    color: #fff;
+
+}
+
+.lang-toggle-mobile {
+
+    display: none;
+
+}
+
 
 
 
@@ -3049,6 +3117,22 @@ blockquote::before {
 
 }
 
+.lang-toggle-mobile {
+
+    margin: 0 25px 10px;
+
+    display: flex;
+
+}
+
+.lang-toggle-mobile button {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
 .mobile-nav ul {
 
     padding: 25px;
@@ -3534,6 +3618,10 @@ blockquote::before {
     #header nav {
         display: none !important;
     }
+
+    .lang-toggle-mobile {
+        display: flex;
+    }
 }
 
 /* Điện thoại */
@@ -3541,6 +3629,15 @@ blockquote::before {
 
     #header nav {
         display: none !important;
+    }
+
+    .lang-toggle button {
+        padding: 5px 9px;
+        font-size: 11px;
+    }
+
+    .header-right {
+        gap: 10px;
     }
 
     .container {
