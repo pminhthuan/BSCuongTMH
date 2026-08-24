@@ -490,10 +490,10 @@ nav a.active::after {
 }
 
 /*==================================================
-=               LANGUAGE TOGGLE
+=               LANGUAGE SWITCH (LINKS)
 ==================================================*/
 
-.lang-toggle {
+.lang-switch {
 
     display: flex;
 
@@ -511,11 +511,7 @@ nav a.active::after {
 
 }
 
-.lang-toggle button {
-
-    border: none;
-
-    background: transparent;
+.lang-switch a {
 
     color: var(--primary-dark);
 
@@ -525,11 +521,11 @@ nav a.active::after {
 
     letter-spacing: .3px;
 
+    text-decoration: none;
+
     padding: 6px 14px;
 
     border-radius: 30px;
-
-    cursor: pointer;
 
     transition: .25s;
 
@@ -537,13 +533,13 @@ nav a.active::after {
 
 }
 
-.lang-toggle button:hover {
+.lang-switch a:hover {
 
     color: var(--primary);
 
 }
 
-.lang-toggle button.active {
+.lang-switch a.active {
 
     background: var(--primary);
 
@@ -551,12 +547,21 @@ nav a.active::after {
 
 }
 
-.lang-toggle-mobile {
+.lang-switch-mobile {
+
+    margin: 0 25px 10px;
 
     display: none;
 
 }
 
+.lang-switch-mobile a {
+
+    flex: 1;
+
+    text-align: center;
+
+}
 
 
 
@@ -3117,22 +3122,6 @@ blockquote::before {
 
 }
 
-.lang-toggle-mobile {
-
-    margin: 0 25px 10px;
-
-    display: flex;
-
-}
-
-.lang-toggle-mobile button {
-
-    flex: 1;
-
-    text-align: center;
-
-}
-
 .mobile-nav ul {
 
     padding: 25px;
@@ -3619,7 +3608,7 @@ blockquote::before {
         display: none !important;
     }
 
-    .lang-toggle-mobile {
+    .lang-switch-mobile {
         display: flex;
     }
 }
@@ -3631,7 +3620,7 @@ blockquote::before {
         display: none !important;
     }
 
-    .lang-toggle button {
+    .lang-switch a {
         padding: 5px 9px;
         font-size: 11px;
     }
