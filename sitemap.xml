@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://phongkhamtaimuihongdanang.com/</loc>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://phongkhamtaimuihongdanang.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://phongkhamtaimuihongdanang.com/eng/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://phongkhamtaimuihongdanang.com/"/>
+    <loc>https://bscuongtmh.com/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://bscuongtmh.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bscuongtmh.com/eng/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bscuongtmh.com/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://phongkhamtaimuihongdanang.com/eng/</loc>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://phongkhamtaimuihongdanang.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://phongkhamtaimuihongdanang.com/eng/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://phongkhamtaimuihongdanang.com/"/>
+    <loc>https://bscuongtmh.com/eng/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://bscuongtmh.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bscuongtmh.com/eng/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bscuongtmh.com/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
